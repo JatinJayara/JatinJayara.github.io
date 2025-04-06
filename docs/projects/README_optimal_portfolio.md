@@ -1,52 +1,49 @@
 # Optimal Portfolio Variance Analysis
 
-This project demonstrates the calculation of the optimal portfolio variance using 10 years of historical data for 10 selected stocks. It was developed as part of the Worthon Financial Modeling Capstone on Coursera.
+This project demonstrates how to calculate the **optimal portfolio variance** using **10 years of historical data** for **10 stocks** sourced from Yahoo Finance. The analysis was completed in **Microsoft Excel** as part of the Worthon Financial Modeling Capstone on Coursera.
 
 ## Project Overview
 
-- *Objective:*  
-  To determine the optimal portfolio with the minimum variance using historical stock data.
+- **Objective:**  
+  Determine the portfolio with the minimum variance.
 
-- *Data:*  
-  10 years of historical data for 10 stocks.
+- **Data:**  
+  10 years of historical price data for 10 stocks from Yahoo Finance.
 
-- *Methodology:*  
-  - Data cleaning and preparation in Excel.
-  - Calculation of portfolio variance.
-  - Analysis of the efficient frontier.
-
-- *Tools:*  
-  - Microsoft Excel
-  - Data Analysis techniques
+- **Methodology:**  
+  1. **Return Calculation:** Compute daily (or monthly) returns for each stock.  
+  2. **Covariance Matrix:** Calculate pairwise covariances using Excel functions and organize them into a matrix.  
+  3. **Portfolio Variance:** Use the formula \(\text{Var} = w^T \Sigma w\) with Excel's matrix multiplication (`MMULT`).  
+  4. **Solver Optimization:**  
+     - **Objective:** Minimize the portfolio variance.  
+     - **Variables:** Stock weights.  
+     - **Constraints:** Sum of weights equals 1 and (optionally) weights \(\geq 0\).
 
 ## Files Included
 
-- Optimal_portfolio_varience.xlsx – The Excel workbook containing the analysis and calculations.
-- README.md – This file, which provides an overview of the project.
+- **Optimal_portfolio_varience.xlsx** – Excel workbook with data, calculations, and Solver setup.
+- **README.md** – This overview of the project.
 
 ## How to Use
 
-1. *Download the File:*  
+1. **Download:**  
    Click the "View Project" button on the portfolio website to download the Excel file.
 
-2. *Open the Workbook:*  
-   Open the Optimal_portfolio_varience.xlsx file in Microsoft Excel.
+2. **Open Workbook:**  
+   Open `Optimal_portfolio_varience.xlsx` in Microsoft Excel.
 
-3. *Review the Analysis:*  
-   The workbook contains step-by-step calculations, formulas, and graphs that detail how the optimal portfolio variance was determined.
+3. **Review Analysis:**  
+   Examine the data, return calculations, covariance matrix, and Solver settings for the portfolio variance.
 
 ## Future Work
 
-- *Automation:*  
-  Consider automating the analysis using programming languages such as Python or R.
-  
-- *Model Enhancement:*  
-  Expand the analysis by including additional stocks and exploring other risk metrics.
+- **Automation:**  
+  Consider using Python or R to automate the process.
+- **Enhancements:**  
+  Expand the analysis by adding more stocks, asset classes, or exploring additional risk metrics.
 
 ## Acknowledgments
 
-This project was developed as part of the Worthon Financial Modeling Capstone on Coursera.
-
----
+Developed as part of the **Worthon Financial Modeling Capstone on Coursera** using data from **Yahoo Finance**.
 
 Feel free to reach out if you have any questions or need further information.
