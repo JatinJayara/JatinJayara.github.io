@@ -1,8 +1,4 @@
----
-layout: default
-title: "Optimal Portfolio Variance Analysis"
----
-# Optimal Portfolio Variance Analysis
+
 
 This project demonstrates how to calculate the **optimal portfolio variance** using **10 years of historical data** for **10 stocks** sourced from Yahoo Finance. The analysis was completed in **Microsoft Excel** as part of the Worthon Financial Modeling Capstone on Coursera.
 
