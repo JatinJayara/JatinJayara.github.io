@@ -1,49 +1,90 @@
-
-
-This project demonstrates how to calculate the **optimal portfolio variance** using **10 years of historical data** for **10 stocks** sourced from Yahoo Finance. The analysis was completed in **Microsoft Excel** as part of the Worthon Financial Modeling Capstone on Coursera.
+# Optimal Portfolio Variance – Modern Portfolio Theory in Excel
 
 ## Project Overview
 
-- **Objective:**  
-  Determine the portfolio with the minimum variance.
+This project implements **Modern Portfolio Theory (MPT)** to construct a minimum-variance portfolio using 10 years of daily price data for 10 stocks. The analysis was performed in **Microsoft Excel** using advanced functions (covariance matrix, MMULT) and the Solver add-in for optimization.
 
-- **Data:**  
-  10 years of historical price data for 10 stocks from Yahoo Finance.
+- **Project Timeline:** March–April 2025 (uploaded to GitHub April 2025)
+- **Academic Context:** Developed as the capstone for the [Wharton Business \& Financial Modeling Specialization](https://www.coursera.org/learn/wharton-financial-modeling-capstone), University of Pennsylvania (Certificate earned February 2025)
+- **Key Result:** Achieved an optimized portfolio with an annualized return of 11.47% and minimized variance, demonstrating practical risk management and quantitative finance skills.
 
-- **Methodology:**  
-  1. **Return Calculation:** Compute daily (or monthly) returns for each stock.  
-  2. **Covariance Matrix:** Calculate pairwise covariances using Excel functions and organize them into a matrix.  
-  3. **Portfolio Variance:** Use the formula \(\text{Var} = w^T \Sigma w\) with Excel's matrix multiplication (`MMULT`).  
-  4. **Solver Optimization:**  
-     - **Objective:** Minimize the portfolio variance.  
-     - **Variables:** Stock weights.  
-     - **Constraints:** Sum of weights equals 1 and (optionally) weights \(\geq 0\).
+
+## Objective
+
+- **Goal:** Minimize portfolio variance (risk) while achieving a target expected return, under the framework of Modern Portfolio Theory.
+- **Constraints:** Portfolio weights sum to 1; scenarios with and without short selling.
+
+
+## Data \& Methodology
+
+- **Data Source:** Yahoo Finance (10 years of daily price data for 10 global stocks)
+- **Steps:**
+
+1. Calculated daily returns for each stock.
+2. Built a 10x10 covariance matrix to measure pairwise asset correlations (see CovarianceMatrix tab).
+3. Used the portfolio variance formula:
+
+$$
+\text{Var}(R_p) = w^T \Sigma w
+$$
+
+where $w$ = weights, $\Sigma$ = covariance matrix.
+4. Applied Excel Solver to find optimal weights minimizing variance, with and without short selling.
+5. Evaluated portfolio return, variance, standard deviation, and Sharpe ratio.
+
+
+## Key Results
+
+- **Optimal Portfolio (No Short Selling):**
+    - Major allocations: Disney (39.2%), Google (17.6%), TSLA (16.8%), AAPL (17.3%)
+    - Portfolio Return: 0.106%
+    - Standard Deviation: 1.26%
+    - Sharpe Ratio: 0.084
+- **Optimal Portfolio (Short Selling Allowed):**
+    - Allocations include negative weights for some stocks (see Solver Optimization tab)
+    - Portfolio Return: 0.1147%
+    - Standard Deviation: 1.30%
+    - Sharpe Ratio: 0.088
+
+All calculations and results are available in the Excel workbook.
 
 ## Files Included
 
-- **Optimal_portfolio_varience.xlsx** – Excel workbook with data, calculations, and Solver setup.
-- **README.md** – This overview of the project.
+- `Optimal_portfolio_varience.xlsx` – Contains raw data, covariance matrix, Solver setup, and optimization results.
+- `README.md` – This documentation.
+
 
 ## How to Use
 
-1. **Download:**  
-   Click the "View Project" button on the portfolio website to download the Excel file.
+1. **Download the Repository:**
+Clone or download and open `Optimal_portfolio_varience.xlsx` in Microsoft Excel.
+2. **Review the Analysis:**
+    - "Historical Price Data (10 Years)" tab: raw returns.
+    - "CovarianceMatrix" tab: pairwise asset correlations.
+    - "Solver Optimization" tab: optimal weights and risk/return metrics.
+3. **Replicate or Extend:**
+    - Adjust stock tickers or time periods.
+    - Use Solver to test other constraints or objectives.
 
-2. **Open Workbook:**  
-   Open `Optimal_portfolio_varience.xlsx` in Microsoft Excel.
+## Skills \& Tools Demonstrated
 
-3. **Review Analysis:**  
-   Examine the data, return calculations, covariance matrix, and Solver settings for the portfolio variance.
+- Quantitative finance: Modern Portfolio Theory, risk-return optimization
+- Excel: Solver, MMULT, covariance matrix, data analysis
+- Financial modeling and documentation
+
+
+## Academic Context
+
+- **Certification:** Wharton Business \& Financial Modeling Capstone, University of Pennsylvania (Coursera, February 2025)
+- **Other Relevant Skills:**
+    - Google Advanced Data Analytics Certificate (April 2025)
+    - NISM Research Analyst Certification (2024–2027)
+    - Additional analytics projects in Python (see profile for tumor detection, e-commerce analysis, ESG stock predictor)
+- **Awards:** 90.02 percentile, CAT 2023 (India)
+
 
 ## Future Work
 
-- **Automation:**  
-  Consider using Python or R to automate the process.
-- **Enhancements:**  
-  Expand the analysis by adding more stocks, asset classes, or exploring additional risk metrics.
-
-## Acknowledgments
-
-Developed as part of the **Worthon Financial Modeling Capstone on Coursera** using data from **Yahoo Finance**.
-
-Feel free to reach out if you have any questions or need further information.
+- Automate portfolio optimization in Python (pandas, numpy, cvxpy)
+- Integrate ESG factors for sustainable investing (planned for upcoming project)
+- Enhance visualization and reporting
