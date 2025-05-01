@@ -1,4 +1,4 @@
-# Optimal Portfolio Variance – Modern Portfolio Theory in Excel
+# Optimal Portfolio Variance: Modern Portfolio Theory Implementation
 
 ## Project Overview
 
