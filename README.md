@@ -5,7 +5,7 @@
 This project implements **Modern Portfolio Theory (MPT)** to construct a minimum-variance portfolio using 10 years of daily price data for 10 stocks. The analysis was performed in **Microsoft Excel** using advanced functions (covariance matrix, MMULT) and the Solver add-in for optimization.
 
 - **Project Timeline:** March–April 2025 (uploaded to GitHub April 2025)
-- **Academic Context:** Developed as the capstone for the [Wharton Business \& Financial Modeling Specialization](https://www.coursera.org/learn/wharton-financial-modeling-capstone), University of Pennsylvania (Certificate earned February 2025)
+- **Academic Context:** Developed as part of the Wharton Business \& Financial Modeling Capstone, University of Pennsylvania (Coursera, completed February 2025, Credential ID: 8XMGQ1EYE2G1)
 - **Key Result:** Achieved an optimized portfolio with an annualized return of 11.47% and minimized variance, demonstrating practical risk management and quantitative finance skills.
 
 
@@ -80,7 +80,6 @@ Clone or download and open `Optimal_portfolio_varience.xlsx` in Microsoft Excel.
     - Google Advanced Data Analytics Certificate (April 2025)
     - NISM Research Analyst Certification (2024–2027)
     - Additional analytics projects in Python (see profile for tumor detection, e-commerce analysis, ESG stock predictor)
-- **Awards:** 90.02 percentile, CAT 2023 (India)
 
 
 ## Future Work
